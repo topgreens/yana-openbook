@@ -158,7 +158,10 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-
+.usericon{
+    height: 40px;
+    margin-right: 10px;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE

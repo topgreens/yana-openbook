@@ -10,7 +10,8 @@ import { User } from '../userlogin/model.user';
 })
 export class HeaderComponent implements OnInit {
   user: User;
-  
+  username;
+  usericon;
   isActive: boolean = true;
   links: Enlace[];
   @Input() enlaceActivo: string;
@@ -22,6 +23,8 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.username = 'usname'; 
+    this.usericon = '/assets/images/profile-icon.png';
   }
 
 }
