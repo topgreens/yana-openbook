@@ -16,6 +16,7 @@ export class UserloginComponent implements OnInit {
   userlogin: boolean;
   usemail;
   uspass;
+  isLoading = false;
   
   constructor(private router: Router, public userService: LoginService) { }
 
@@ -24,7 +25,9 @@ export class UserloginComponent implements OnInit {
     this.usemail = 'proyectoyana@gmail.com';
     this.uspass = '';
     this.login();
+    this.isLoading = true;
   }
+  
 
   login(){
     console.log('enviamos: ' + this.usemail + ' ' + this.uspass);

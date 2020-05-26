@@ -8,13 +8,20 @@ import { UserloginComponent } from './userlogin/userlogin.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterModule } from './footer/footer.module';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserloginComponent,
     HeaderComponent,
-    HomepageComponent
+    HomepageComponent,
+    ShoppingListComponent,
+    ShoppingEditComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -25,9 +32,12 @@ import { HomepageComponent } from './homepage/homepage.component';
   ],
   exports: [
     UserloginComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomepageComponent
   ],
-  providers: [],
+  providers: [
+    ShoppingListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

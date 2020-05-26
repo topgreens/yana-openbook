@@ -10,7 +10,11 @@ import { ActivitiesListComponent } from './activities-list/activities-list.compo
 
 
 @NgModule({
-  declarations: [ActivitiesComponent, ActivitiesEditComponent, ActivitiesAddComponent, ActivitiesListComponent],
+  declarations: [
+    ActivitiesComponent, 
+    ActivitiesEditComponent, 
+    ActivitiesAddComponent, 
+    ActivitiesListComponent],
   imports: [
     CommonModule,
     ActivitiesRoutingModule,

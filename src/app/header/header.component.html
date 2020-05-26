@@ -7,27 +7,26 @@
       </div>
 
       <ul class="list-unstyled components">
-          <p>Openbook</p>
-          <li class="active">
-              <a [routerLink]="'homepage'" aria-expanded="false" >Home</a> 
+          <li routerLinkActive="active" class="active">
+              <a [routerLink]="'homepage'" aria-expanded="false">Home</a> 
           </li>
-          <li>
+          <li routerLinkActive="active">
               <a [routerLink]="'profile'" aria-expanded="false" >Profile</a> 
           </li>
-          <li>
+          <li routerLinkActive="active">
               <a [routerLink]="'activities'">Events</a>
           </li>
-          <li>
+          <li routerLinkActive="active">
               <a [routerLink]="'shopping-list'">Shopping-List</a>
           </li>
       </ul>
 
       <ul class="list-unstyled CTAs">
-          <li>
-              <a href="#" class="download">Recipe book</a>
+          <li routerLinkActive="active">
+              <a href="#" class="recipe">Recipe book</a>
           </li>
           <li>
-              <a href="#" class="article">Logout</a>
+              <a href="#" class="logout">Logout</a>
           </li>
       </ul>
   </nav>

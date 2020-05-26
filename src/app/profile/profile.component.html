@@ -3,16 +3,16 @@
     <div class="row my-2">
         <div class="col-lg-8 order-lg-2">
             <ul class="nav nav-tabs">
-                <li class="nav-item">
+                <li routerLinkActive="active" class="nav-item">
                     <a [routerLink]="'user-profile'"  data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
                 </li>
-                <li class="nav-item">
+                <li routerLinkActive="active" class="nav-item">
                     <a [routerLink]="'edit-pass'"  data-target="#messages" data-toggle="tab" class="nav-link">Messages</a>
                 </li>
-                <li class="nav-item">
+                <li routerLinkActive="active" class="nav-item">
                     <a [routerLink]="'edit'"  data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
                 </li>
-                <li class="nav-item">
+                <li routerLinkActive="active" class="nav-item">
                     <a [routerLink]="'recent-activity'"  data-target="#edit" data-toggle="tab" class="nav-link">Recent-Activity</a>
                 </li>
             </ul>

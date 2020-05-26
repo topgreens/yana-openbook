@@ -148,12 +148,12 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
+a.recipe {
     background: #fff;
     color: #253370;
 }
 
-a.article, a.article:hover {
+a.logout, a.logout:hover {
     background: #253370 !important;
     color: #fff !important;
 }
